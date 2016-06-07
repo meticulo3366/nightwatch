@@ -18,4 +18,7 @@ RUN npm install -g \
 
 USER node
 
-ENTRYPOINT ["tini", "--", "nightwatch"]
+#WORKDIR /
+
+ENTRYPOINT ["tini", "--"]
+

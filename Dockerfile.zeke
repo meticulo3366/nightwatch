@@ -1,0 +1,3 @@
+FROM mavrck/node:4.2.2
+
+RUN npm install -g nightwatch

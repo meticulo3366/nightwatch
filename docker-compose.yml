@@ -29,8 +29,10 @@ firefoxdebug:
   ports:
     - 5901:5900
 nightwatch:
-  image: blueimp/nightwatch:0.9
+  image: meticulo3366/node:4.2.2-utils
+  working_dir: /home/node
   links:
     - hub
   volumes:
     - ./test:/home/node
+  command: bash -c "sleep 20 && nightwatch -t spec.js"
